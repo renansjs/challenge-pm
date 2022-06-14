@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon-white.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>WEBDEV</title>
+</head>
+
+<body>
+
+    <main>
+        <header> <img src="./assets/LOGO-WDR.svg" alt="logo web dev"> </header>
+
+        <div class="container">
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Utilizador</a></li>
+                        <li><a href="#">Quantum Solum</a></li>
+                        <li><a href="#">Marcus Tremer</a></li>
+                    </ul>
+                </nav>
+
+                <footer>
+                    <p>2019® Premium-minds.com</p>
+                </footer>
+            </aside>
+
+            <section>
+                <h1>Utilizador</h1>
+
+                <form onsubmit="usuario_guardado()" action="http://127.0.0.1:5500/teste.html">
+                    <details open="open">
+                        <summary class="header-summary">
+                            Tipo de utilizador
+                            <span><img src="./assets/icone-menor.svg" alt=""></span>
+                        </summary>
+
+                        <div class="style-input">
+                            <div class="input-group">
+                                <input value="projectM" type="checkbox" name="techs" id="projectM">
+                                <label for="projectM"> Project Manager </label>
+                            </div>
+
+                            <div class="input-group">
+                                <input value="developer" type="checkbox" name="techs" id="developer">
+                                <label for="developer"> Developer </label>
+
+                            </div>
+                            <div class="input-group">
+                                <input value="architect" type="checkbox" name="techs" id="architect">
+                                <label for="architect"> Architect </label>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details open="open">
+                        <summary class="header-component">
+                            Contacto
+                            <span><img src="./assets/icone-menor.svg" alt=""></span>
+                        </summary>
+
+
+                        <div class="style-input">
+                            <div class="style-contact">
+                                <div class="input-field">
+                                    <label class="label-contact label" for="">Email</label>
+                                    <input class="input-contact" type="email" id="email" required>
+                                </div>
+                                <div class="input-field">
+                                    <label class="label-contact label" for="">Palavra-passe</label>
+                                    <input class="input-contact" type="password" id="password" autocomplete="off"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label class="label-contact label" for="">Telefone</label>
+                                <input class="input-contact" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                                    placeholder="+351" id="tel" required>
+                            </div>
+
+                    </details>
+
+
+                    <div class="btn-group">
+                        <button>Cancelar</button>
+                        <button type="submit" class="btn-primary">Guardar</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
