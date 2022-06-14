@@ -40,7 +40,7 @@
             <section>
                 <h1>Utilizador</h1>
 
-                <form onsubmit="usuario_guardado()" action="http://127.0.0.1:5500/teste.html">
+                <form onsubmit="usuario_guardado()" >
                     <details open="open">
                         <summary class="header-summary">
                             Tipo de utilizador
@@ -76,17 +76,17 @@
                             <div class="style-contact">
                                 <div class="input-field">
                                     <label class="label-contact label" for="">Email</label>
-                                    <input class="input-contact" type="email" id="email" required>
+                                    <input class="input-contact" name="user" type="email" id="email" required>
                                 </div>
                                 <div class="input-field">
                                     <label class="label-contact label" for="">Palavra-passe</label>
-                                    <input class="input-contact" type="password" id="password" autocomplete="off"
+                                    <input class="input-contact" name="user" type="password" id="password" autocomplete="off"
                                         required>
                                 </div>
                             </div>
                             <div class="input-field">
                                 <label class="label-contact label" for="">Telefone</label>
-                                <input class="input-contact" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                                <input class="input-contact" name="user" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                                     placeholder="+351" id="tel" required>
                             </div>
 

@@ -27,7 +27,5 @@ function usuario_guardado() {
         "tel": tel
     }
 
-    alert = {}
-
     }
   
